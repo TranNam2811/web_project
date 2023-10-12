@@ -1,1 +1,466 @@
-/* dinh dang style*/
+/* dinh dang hien thi cho website*/
+body{
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face{
+    font-family: Lobster;
+    src:url("/fonts/Lobster-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* DAY LA HEADER */
+/*========================================================================*/
+
+
+
+
+
+
+
+
+/* DAY LA TRANG CHINH*/
+/*========================================================================*/
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section>.bia-page{
+    background-color: grey;
+    color: white;
+}
+
+@media all and (min-width: 320px){
+    /* bia page*/
+    .bia-page>.bigpic{
+        display: none;
+    }
+    .bia-page>.smallpic{
+        display: block;
+    }
+    .bia-page>img{
+        width: 100%;
+    }
+    .bia-page>div{
+        padding: 2%;
+    }
+    .bia-page a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .bia-page div>a{
+        padding: 0;  
+        background-color: white;
+        color: black;
+        display: block;
+        text-align: center;
+        padding: 2%;
+        transition: 0.3s;
+    }
+    .bia-page div>a:hover{
+        padding: 0;  
+        background-color: black;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 2%
+    }
+
+
+    .bia-page p>a{
+        font-weight: bold;      
+    }
+    .bia-page p>a:hover{
+        font-weight: bold;
+        text-decoration: underline;
+    }   
+    .bia-page .line1{
+        font-size: 110%;
+        margin: 0;
+    }
+    .bia-page .line2{
+        font-size: 180%;
+        font-weight: bold;
+        margin: 2% 0;
+    }
+    .bia-page .line3{
+        margin: 0 0 2% 0;
+    }
+    .bia-page .masale{
+        font-weight: bold;
+    }
+
+
+    /* shop by style*/
+
+    .shop-by-style{
+        padding: 2%;
+        background-color: rgba(255, 224, 47, 0.507);
+        margin-top: 2%;
+    }
+    .shop-by-style>p:first-of-type{
+        font-weight: bold;
+        font-size: 120%;
+    }
+    .shop-by-style>p:nth-of-type(2)>a{
+        color: black;
+        margin: 0 2%;
+        text-decoration: none;
+    }
+    .shop-by-style>p:nth-of-type(2)>a:hover{
+        color: black;
+        margin: 0 2%;
+        text-decoration: underline;
+    }
+
+    .ds-shop-by-style{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ds-shop-by-style>a{
+        width: 50%;
+        text-decoration: none;
+        color: black;
+    }
+    .item-shop-by-style{
+        width: 100%;
+        margin-bottom: 2%;
+        position: relative;
+    }
+    
+    .item-shop-by-style>img{
+        width: 100%;
+
+    }
+    .item-shop-by-style>p{
+        background-color: white;
+        padding: 4%;
+        margin: 0;
+        font-weight: bold;      
+    }
+    .item-shop-by-style .marker{
+        position: absolute;
+        background-color: rgba(128, 128, 128, 0.507);
+        z-index: 30;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-weight: bold;
+        font-size: 150%;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        display: none;
+    }
+    .ds-shop-by-style>a:hover .item-shop-by-style>.marker{
+        display: block;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media all and (min-width: 725px){
+    /* bia page*/
+    .bia-page>.bigpic{
+        display: none;
+    }
+    .bia-page>.smallpic{
+        display: block;
+    }
+    .bia-page>img{
+        width: 100%;
+    }
+    .bia-page>div{
+        padding: 2%;
+    }
+    .bia-page a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .bia-page div>a{
+        padding: 0;  
+        background-color: white;
+        color: black;
+        display: block;
+        text-align: center;
+        padding: 2%;
+        transition: 0.3s;
+    }
+    .bia-page div>a:hover{
+        padding: 0;  
+        background-color: black;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 2%
+    }
+
+
+    .bia-page p>a{
+        font-weight: bold;      
+    }
+    .bia-page p>a:hover{
+        font-weight: bold;
+        text-decoration: underline;
+    }   
+    .bia-page .line1{
+        font-size: 110%;
+        margin: 0;
+    }
+    .bia-page .line2{
+        font-size: 180%;
+        font-weight: bold;
+        margin: 2% 0;
+    }
+    .bia-page .line3{
+        margin: 0 0 2% 0;
+    }
+    .bia-page .masale{
+        font-weight: bold;
+    }
+
+
+    /* shop by style*/
+
+    .shop-by-style{
+        padding: 2%;
+        background-color: rgba(255, 224, 47, 0.507);
+        margin-top: 2%;
+    }
+    .shop-by-style>p:first-of-type{
+        font-weight: bold;
+        font-size: 120%;
+    }
+    .shop-by-style>p:nth-of-type(2)>a{
+        color: black;
+        margin: 0 2%;
+        text-decoration: none;
+    }
+    .shop-by-style>p:nth-of-type(2)>a:hover{
+        color: black;
+        margin: 0 2%;
+        text-decoration: underline;
+    }
+
+    .ds-shop-by-style{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ds-shop-by-style>a{
+        width: 50%;
+        text-decoration: none;
+        color: black;
+    }
+    .item-shop-by-style{
+        width: 100%;
+        margin-bottom: 2%;
+        position: relative;
+    }
+    
+    .item-shop-by-style>img{
+        width: 100%;
+
+    }
+    .item-shop-by-style>p{
+        background-color: white;
+        padding: 4%;
+        margin: 0;
+        font-weight: bold;      
+    }
+    .item-shop-by-style .marker{
+        position: absolute;
+        background-color: rgba(128, 128, 128, 0.507);
+        z-index: 30;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-weight: bold;
+        font-size: 150%;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        display: none;
+    }
+    .ds-shop-by-style>a:hover .item-shop-by-style>.marker{
+        display: block;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media all and (min-width: 725px){
+    /* bia page*/
+    .bia-page>.smallpic{
+        display: none;
+    }
+    .bia-page>.bigpic{
+        display: block;
+    }
+    .bia-page>img{
+        width: 100%;
+    }
+
+    .bia-page{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+    }
+    .bia-page::after{
+        width: 0;
+        height: 0;
+        content: "";
+        opacity: 0;
+        clear: both;
+    }
+
+    .bia-page>div{
+        position: absolute;
+        float: left;
+        top: 0;
+        padding: 1%;      
+        width: 35%;
+    }
+    .bia-page a{
+        text-decoration: none;
+    }
+    
+    .bia-page div>a{
+        width: 60%;
+        padding: 0;  
+        background-color: white;
+        color: black;
+        display: block;
+        text-align: center;
+        padding: 2%;
+        margin: 5% 0;
+        transition: 0.3s;
+    }
+    .bia-page div>a:hover{
+        padding: 0;  
+        background-color: black;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 2%
+    }
+
+    .bia-page>div>p>a{
+        font-weight: bold; 
+        font-size: 60%;     
+    }
+    .bia-page p>a:hover{
+        font-weight: bold;
+        text-decoration: underline;
+    }   
+    .bia-page .line1{
+        font-size: 70%;
+        margin: 0;
+    }
+    .bia-page .line2{
+        font-size: 100%;
+        font-weight: bold;
+        margin: 0;
+    }
+    .bia-page .line3{
+        font-size: 70%;
+        margin: 0 0 2% 0;
+    }
+    .bia-page .masale{
+        font-weight: bold;
+    }
+
+
+    /* shop by style*/
+
+    .shop-by-style{
+        padding: 2%;
+        background-color: rgba(255, 224, 47, 0.507);
+        margin-top: 2%;
+    }
+    .shop-by-style>p:first-of-type{
+        font-weight: bold;
+        font-size: 120%;
+    }
+    .shop-by-style>p:nth-of-type(2)>a{
+        color: black;
+        margin: 0 2%;
+        text-decoration: none;
+    }
+    .shop-by-style>p:nth-of-type(2)>a:hover{
+        color: black;
+        margin: 0 2%;
+        text-decoration: underline;
+    }
+
+    .ds-shop-by-style{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ds-shop-by-style>a{
+        width: 50%;
+        text-decoration: none;
+        color: black;
+    }
+    .item-shop-by-style{
+        width: 100%;
+        margin-bottom: 2%;
+        position: relative;
+    }
+
+    .item-shop-by-style>img{
+        width: 100%;
+
+    }
+    .item-shop-by-style>p{
+        background-color: white;
+        padding: 4%;
+        margin: 0;
+        font-weight: bold;      
+    }
+    .item-shop-by-style .marker{
+        position: absolute;
+        background-color: rgba(128, 128, 128, 0.507);
+        z-index: 30;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-weight: bold;
+        font-size: 150%;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        display: none;
+    }
+    .ds-shop-by-style>a:hover .item-shop-by-style>.marker{
+        display: block;
+        display: flex;
+        align-items: flex-end;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DAY LA FOOTER*/
+/*========================================================================*/
