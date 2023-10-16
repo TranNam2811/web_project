@@ -29,15 +29,18 @@ body {
 ============================================================================================================================*/
 /* rgb(246, 244, 238) */
 
-section {
-    width: 90%;
-    margin: 0 auto;
-}
+
 
 
 
 /* reponsive ===================================================================================*/
-@media all and (min-width: 320px) {
+@media all and (min-width: 600px) {
+    section {
+        width: 90vw;
+        
+        margin: 0 auto;
+    }
+
     /* bia page ***********************************************************/
     .bia-page>img{
         width: 100%;
@@ -73,13 +76,13 @@ section {
         text-decoration: underline;
     }
 
-    .ds-shop-by-style {
+    .list-shop-by-style {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .ds-shop-by-style>a {
-        width: 50%;
+    .list-shop-by-style>a {
+        width: 25%;
         text-decoration: none;
         color: black;
     }
@@ -102,7 +105,7 @@ section {
         font-weight: bold;
     }
 
-    .item-shop-by-style .marker {
+    .item-shop-by-style .marker-shop-by-style {
         position: absolute;
         background-color: rgba(110, 110, 110, 0.5);
         z-index: 30;
@@ -117,7 +120,7 @@ section {
         display: none;
     }
 
-    .ds-shop-by-style>a:hover .item-shop-by-style>.marker {
+    .list-shop-by-style>a:hover .item-shop-by-style>.marker-shop-by-style {
         display: block;
         display: flex;
         align-items: flex-end;
@@ -128,8 +131,6 @@ section {
     /* in with the new - hang muc moi*************************************************/
 
     .in-with-the-new {
-        display: flex;
-        flex-wrap: wrap;
         background-color: rgb(246, 244, 238);
         margin: 2% 0 2% 0;
         padding: 2%;
@@ -143,6 +144,9 @@ section {
         width: 100%;
     }
 
+    .list-in-with-the-new{
+        display: flex;
+    }
     .item-in-with-the-new {
         width: 100%;
         margin-bottom: 4%;
@@ -150,6 +154,7 @@ section {
 
     .item-in-with-the-new>img {
         width: 100%;
+        transition: 0.2s;
     }
 
     .item-in-with-the-new>p {
@@ -160,18 +165,21 @@ section {
         margin-left: 3%;
     }
 
-    .in-with-the-new>a {
+    .list-in-with-the-new>a {
         color: black;
         font-size: 90%;
         text-decoration: none;
+        transition: 0.2s;
     }
 
-    .in-with-the-new>a:hover {
+    .list-in-with-the-new>a:hover {
         color: black;
         font-size: 90%;
         text-decoration: underline;
     }
-
+    .list-in-with-the-new>a:hover img{
+        opacity: 0.5;
+    }
 
 
     /* featured collection - bo suu tap noi bat****************************************************/
@@ -356,6 +364,68 @@ section {
     .content-best-seller>a:hover {
         background-color: rgba(0, 0, 0, 0.5);
     }
+
+    /*list best seller - danh sach san pham hot************/
+
+    /*chinh icon cua button***************/
+    
+
+
+    /*cac thanh phan slider*/
+    .list-best-seller{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .item-best-seller>div{
+        position: relative;
+        width: 70%;
+    }
+    .item-best-seller>div>img{
+        width: 100%;
+    }
+    .item-best-seller img:first-child{
+       
+        position: absolute;
+        z-index: 10;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .item-best-seller>div:hover img:first-child{
+        opacity: 0;
+    }
+    .item-best-seller img:nth-child(2){
+       
+        position: absolute;
+        z-index: 10;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .item-best-seller>div:hover img:nth-child(2){
+        opacity: 1;
+    }
+    .item-best-seller>div>i{
+        position: absolute;
+        z-index: 20;
+        top: 20vh;
+        left: 1vw;
+    }
+    .item-best-seller{
+        background-color: aqua;
+        position: relative;
+        height: 200px;
+    }
+    .item-best-seller>p{
+        width: 100%;
+        position: absolute;
+        top: 50vh;
+    }
+
+
+
+
 
 
     /* converse by you - tu thiet ke************************************************/
