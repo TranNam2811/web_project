@@ -46,11 +46,34 @@ $(document).ready(function () {
 
     $('.review-teaser__slider').slick({
         slidesToShow: 2,
-        slidesToScroll: 2,
-        prevArrow: '<button type="button" class="product-carousel__arrow product-carousel__arrow-prev slick-arrow" title="Go to Previous" aria-disabled="true" style=""><svg class="icon--chevron-slick " role="none" focusable="false" aria-hidden="true"><use xlink:href="#icon--chevron"></use></svg></button>',
-        nextArrow: '<button type="button" class="product-carousel__arrow product-carousel__arrow-next slick-arrow" title="Go to Next" aria-disabled="false" style=""><svg class="icon--chevron-slick icon--rotate-h" role="none" focusable="false" aria-hidden="true"><use xlink:href="#icon--chevron"></use></svg></button>',
+        slidesToScroll: 1,
+        prevArrow: '',
+        nextArrow: '',
+        infinite: false,
     });
 
+    $('.slick-prev--offset').click(function () {
+        $('.review-teaser__slider').slick('slickPrev');
+    });
+    $('.slick-next--offset').click(function () {
+        $('.review-teaser__slider').slick('slickNext');
+    });
+
+    $('.review-teaser__slider').on('afterChange', function(event, slick, currentSlide) {
+        var totalSlides = slick.slideCount;
+
+        if (currentSlide === 0) {
+            $('.slick-prev--offset').addClass('slick-disabled');
+        } else {
+            $('.slick-prev--offset').removeClass('slick-disabled');
+        }
+
+        if (currentSlide === totalSlides - 2) {
+            $('.slick-next--offset').addClass('slick-disabled');
+        } else {
+            $('.slick-next--offset').removeClass('slick-disabled');
+        }
+    });
 });
 
 
