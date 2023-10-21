@@ -47,8 +47,8 @@ $(document).ready(function () {
     $('.review-teaser__slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
-        prevArrow: '',
-        nextArrow: '',
+        //prevArrow: '',
+        //nextArrow: '',
         infinite: false,
     });
 
